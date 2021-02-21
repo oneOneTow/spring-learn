@@ -1,0 +1,20 @@
+* BeanFactoryPostProcessor
+```
+BeanFactoryPostProcessor的作用是在bean
+
+的定义信息已经加载但还没有初始化的时候执行方法postProcessBeanFactory(）方法
+```
+* BeanDefinitionRegistryPostProcessor
+```
+该方法用来注册更多的bean到spring容器中
+https://blog.csdn.net/ztchun/article/details/90814135
+```
+* PostProcessorRegistrationDelegate
+```
+invokeBeanFactoryPostProcessors方法用来找出所有beanFactory后置处理器，并且调用这些处理器来改变bean的定义
+```
+
+* 牛逼
+```
+https://www.cnblogs.com/shoshana-kong/p/10692857.html
+```
