@@ -19,15 +19,13 @@ public class AsyncTestImpl implements AsyncTest {
 
     @Override
     public void trigger1() {
-        System.out.println("lzq");
+        this.trigger();
     }
 
     @Override
     @Async
     @Transactional
     public Future<Boolean> trigger() {
-        System.out.println("hello async");
-        System.out.println("hello async end");
         return new AsyncResult<>(true);
     }
 }
